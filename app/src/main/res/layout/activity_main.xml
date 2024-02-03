@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/o"/>
+            <TextView
+                android:id="@+id/playerOName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" PlayerO"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="32sp"/>
+            <TextView
+                android:id="@+id/oScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/x"/>
+            <TextView
+                android:id="@+id/playerXName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" PlayerX"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                android:textSize="32sp"/>
+            <TextView
+                android:id="@+id/xScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/turnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn player name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="48dp"
+        android:padding="2dp"
+        android:background="@drawable/bord_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/a1"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/a2"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/a3"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/c1"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/c2"
+                style="@style/column" />
+
+            <View
+                style="@style/verticalLine"/>
+
+            <Button
+                android:id="@+id/c3"
+                style="@style/column" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
